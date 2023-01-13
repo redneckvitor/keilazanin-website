@@ -1,10 +1,12 @@
-$background-color: white;
-$text-color: red;
+$color-background: #fafafa;
+$color-font: #101010;
+$color-menu-background: #111;
 
-$serif-font: "Playfair Display", serif;
-$sans-serif-font: "Poppins", sans-serif;
-$cursive-font: "Kaushan Script", cursive;
+$font-serif: "Playfair Display", serif;
+$font-sans-serif: "Poppins", sans-serif;
+$font-cursive: "Kaushan Script", cursive;
 
+$desktop-navbar-size: 100%;
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,55 +17,50 @@ body {
   width: 100%;
   height: 100vh;
   line-height: 1.75;
-
-  font-family: $sans-serif-font;
 }
 
 ::selection {
-  background-color: blue;
-  color: #ffffff;
+  background-color: $color-menu-background;
+  color: $color-background;
 }
 
-// Header e navbar
-
+// Menu de navegação:
 .header {
   display: flex;
   justify-content: center;
 
   width: 100%;
-  height: 8 vh;
+  height: 14vh;
+
+  position: fixed;
+
+  .navbar {
+    display: flex;
+    justify-content: end;
+
+    width: $desktop-navbar-size;
+    height: 14vh;
+  }
 }
 
-.navbar {
-  display: flex;
-  justify-content: end;
-
-  width: 50%;
-  height: 8vh;
-  padding: 5px;
-  padding-right: 30px;
-}
-
-//
-
-// Menu de navegação
-.sidenav {
+.nav-menu {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: $color-menu-background;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align: center;
 }
 
-.sidenav a {
+.nav-menu a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-family: $font-sans-serif;
   font-size: 25px;
   color: #818181;
   display: block;
@@ -74,7 +71,7 @@ body {
   }
 }
 
-.sidenav .closebtn {
+.nav-menu .close-button {
   position: absolute;
   top: 0;
   right: 25px;
@@ -82,11 +79,30 @@ body {
   margin-left: 50px;
 }
 
+.nav-button-container {
+  height: 12vh;
+  width: 12vh;
+
+  border-radius: 8px;
+
+  padding: 30px;
+  cursor: pointer;
+
+  .nav-button {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
 @media screen and (max-height: 450px) {
-  .sidenav {
+  .nav-menu {
     padding-top: 15px;
   }
-  .sidenav a {
+  .nav-menu a {
     font-size: 18px;
   }
 }
@@ -96,3 +112,5 @@ body {
     width: 100%;
   }
 }
+
+//

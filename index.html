@@ -15,37 +15,46 @@
 
     <title>Keila Zanin</title>
   </head>
+
   <body>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+    <div id="navigationMenu" class="nav-menu">
+      <a href="javascript:void(0)" class="close-button" onclick="closeNav()"
         >&times;
       </a>
 
-      <a href="#">Página 1</a>
-      <a href="#">Página 2</a>
-      <a href="#">Página 3</a>
-      <a href="#">Página 4</a>
+      <a href="#">Início</a>
+      <a href="#">Contato</a>
     </div>
 
-    <!--
-
-        
-        
-        <h2>Primeiros testes com menu de navegação</h2>
-        <p>Clique no botão abaixo para abrir o menu.</p>
-        
-    -->
     <header class="header">
       <nav class="navbar">
-        <span
-          class="navButton"
-          style="font-size: 40px; cursor: pointer"
-          onclick="openNav()"
-          >&#9776;
-        </span>
+        <div class="nav-button-container" onclick="openNav()">
+          <img src="./images/list_menu.svg" alt="" class="nav-button" />
+        </div>
       </nav>
     </header>
-    <hr />
+
+    <section id="section-1">
+      <div class="div1">
+        <h1>Keila Zanin</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic
+          obcaecati optio aliquam cumque earum harum ducimus dolorum aperiam
+          maxime!
+        </p>
+      </div>
+      <div class="div2">
+        <img
+          src="./images/person-picture.jpg"
+          alt=""
+          class="person-picture-1"
+        />
+      </div>
+    </section>
+
+    <section id="section-2"></section>
+
+    <section id="section-3"></section>
 
     <script src="./main.js"></script>
   </body>
