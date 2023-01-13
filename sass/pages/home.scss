@@ -46,3 +46,16 @@ p {
   color: $color-font;
   font-size: 20px;
 }
+
+@media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) {
+  section {
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
