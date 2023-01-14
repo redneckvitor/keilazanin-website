@@ -6,7 +6,10 @@ $font-serif: "Playfair Display", serif;
 $font-sans-serif: "Poppins", sans-serif;
 $font-cursive: "Kaushan Script", cursive;
 
-$desktop-navbar-size: 100%;
+$size-desktop-navbar: 100%; // Puxa o botão do menu para a esquerda
+$size-nav-button-icon: 3.2vh;
+$size-nav-button: 6vh;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -30,7 +33,7 @@ body {
   justify-content: center;
 
   width: 100%;
-  height: 14vh;
+  height: 18vh;
 
   position: fixed;
 
@@ -38,8 +41,29 @@ body {
     display: flex;
     justify-content: end;
 
-    width: $desktop-navbar-size;
-    height: 14vh;
+    width: $size-desktop-navbar;
+    height: 18vh;
+
+    padding: 1.8%;
+  }
+}
+
+.nav-button-container {
+  height: $size-nav-button;
+  width: $size-nav-button;
+
+  background-color: white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  .nav-button {
+    width: $size-nav-button-icon;
+    height: $size-nav-button-icon;
   }
 }
 
@@ -77,25 +101,6 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-
-.nav-button-container {
-  height: 12vh;
-  width: 12vh;
-
-  border-radius: 8px;
-
-  padding: 30px;
-  cursor: pointer;
-
-  .nav-button {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-
-    background-color: white;
-    border-radius: 50%;
-  }
 }
 
 @media screen and (max-height: 450px) {

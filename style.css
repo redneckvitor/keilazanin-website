@@ -19,14 +19,30 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 14vh;
+  height: 18vh;
   position: fixed;
 }
 .header .navbar {
   display: flex;
   justify-content: end;
   width: 100%;
-  height: 14vh;
+  height: 18vh;
+  padding: 1.8%;
+}
+
+.nav-button-container {
+  height: 6vh;
+  width: 6vh;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-button-container .nav-button {
+  width: 3.2vh;
+  height: 3.2vh;
 }
 
 .nav-menu {
@@ -64,21 +80,6 @@ body {
   margin-left: 50px;
 }
 
-.nav-button-container {
-  height: 12vh;
-  width: 12vh;
-  border-radius: 8px;
-  padding: 30px;
-  cursor: pointer;
-}
-.nav-button-container .nav-button {
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 50%;
-}
-
 @media screen and (max-height: 450px) {
   .nav-menu {
     padding-top: 15px;
@@ -98,45 +99,37 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
-#section-1 {
-  height: 92vh;
-}
-
-.div1 {
+.text-div-1 {
   padding: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+.text-div-1 .person-name-title {
+  font-family: "Playfair Display", serif;
+  color: #101010;
+  font-size: 40px;
+}
+.text-div-1 .text-block-1 {
+  font-family: "Poppins", sans-serif;
+  color: #101010;
+  font-size: 20px;
+}
 
-.div2 {
-  padding: 0px;
+.image-div-1 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: start;
+  background-color: black;
 }
-.div2 .person-picture-1 {
-  width: 92.25%;
+.image-div-1 .person-picture-1 {
+  width: 100%;
   height: auto;
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-  color: #101010;
-  font-size: 40px;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  color: #101010;
-  font-size: 20px;
 }
 
 @media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) {
@@ -146,8 +139,6 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
 }
 
