@@ -1,3 +1,17 @@
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 6vh;
+  color: #303030;
+  font-weight: regular;
+}
+
+.text-block {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+  color: #303030;
+  font-weight: regular;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,8 +25,8 @@ body {
 }
 
 ::selection {
-  background-color: #111;
-  color: #fafafa;
+  background-color: #303030;
+  color: #f0f0f0;
 }
 
 .header {
@@ -31,10 +45,10 @@ body {
 }
 
 .nav-button-container {
+  border-radius: 50%;
+  background-color: white;
   height: 6vh;
   width: 6vh;
-  background-color: white;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,17 +60,17 @@ body {
 }
 
 .nav-menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align: center;
+  background-color: #111;
+  width: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  overflow-x: hidden;
 }
 
 .nav-menu a {
@@ -76,18 +90,10 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 66px;
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .nav-menu {
-    padding-top: 15px;
-  }
-  .nav-menu a {
-    font-size: 18px;
-  }
-}
 @media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) {
   .navbar {
     width: 100%;
@@ -108,16 +114,6 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-.text-div-1 .person-name-title {
-  font-family: "Playfair Display", serif;
-  color: #101010;
-  font-size: 40px;
-}
-.text-div-1 .text-block-1 {
-  font-family: "Poppins", sans-serif;
-  color: #101010;
-  font-size: 20px;
-}
 
 .image-div-1 {
   width: 100%;
@@ -130,6 +126,26 @@ section {
 .image-div-1 .person-picture-1 {
   width: 100%;
   height: auto;
+}
+
+.content-div-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-transform: uppercase;
+}
+.content-div-1 button {
+  width: 48%;
+  height: 8vh;
+}
+.content-div-1 .card {
+  width: 26vw;
+  max-height: 18vh;
+  font-size: 0vh;
+  margin: 2vh;
+  transition: 0.7s;
+  font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) {

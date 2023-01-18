@@ -13,18 +13,6 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  .person-name-title {
-    font-family: $font-serif;
-    color: $color-font;
-    font-size: 40px;
-  }
-
-  .text-block-1 {
-    font-family: $font-sans-serif;
-    color: $color-font;
-    font-size: 20px;
-  }
 }
 
 .image-div-1 {
@@ -39,6 +27,28 @@ section {
   .person-picture-1 {
     width: 100%;
     height: auto;
+  }
+}
+
+.content-div-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-transform: uppercase;
+
+  button {
+    width: 48%;
+    height: 8vh;
+  }
+
+  .card {
+    width: 26vw;
+    max-height: 18vh;
+    font-size: 0vh;
+    margin: 2vh;
+    transition: 0.7s;
+    font-family: $font-sans-serif;
   }
 }
 

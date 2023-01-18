@@ -10,6 +10,26 @@ $size-desktop-navbar: 100%; // Puxa o botão do menu para a esquerda
 $size-nav-button-icon: 3.2vh;
 $size-nav-button: 6vh;
 
+@mixin text-style(
+  $font-family: "Arial",
+  $font-size: 2.5vh,
+  $text-color: black,
+  $font-weight: regular
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $text-color;
+  font-weight: $font-weight;
+}
+
+.title {
+  @include text-style($font-serif, 6vh, #303030);
+}
+
+.text-block {
+  @include text-style($font-sans-serif, 2vh, #303030);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,8 +43,8 @@ body {
 }
 
 ::selection {
-  background-color: $color-menu-background;
-  color: $color-background;
+  background-color: #303030;
+  color: #f0f0f0;
 }
 
 // Menu de navegação:
@@ -49,16 +69,14 @@ body {
 }
 
 .nav-button-container {
+  border-radius: 50%;
+  background-color: white;
+
   height: $size-nav-button;
   width: $size-nav-button;
-
-  background-color: white;
-  border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   cursor: pointer;
 
   .nav-button {
@@ -68,17 +86,18 @@ body {
 }
 
 .nav-menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: $color-menu-background;
-  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align: center;
+  background-color: $color-menu-background;
+
+  width: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  overflow-x: hidden;
 }
 
 .nav-menu a {
@@ -99,23 +118,13 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 66px;
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .nav-menu {
-    padding-top: 15px;
-  }
-  .nav-menu a {
-    font-size: 18px;
-  }
-}
-
+// Adapatações para outros dispositivos
 @media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) {
   .navbar {
     width: 100%;
   }
 }
-
-//
