@@ -26,7 +26,7 @@ function openTextBlock_1() {
 
     isActive_1 = false;
   } else {
-    changeContent("1.5vh");
+    changeContent("1.661vh");
 
     isActive_1 = true;
     isActive_2 = false;
@@ -40,7 +40,7 @@ function openTextBlock_2() {
 
     isActive_2 = false;
   } else {
-    changeContent("0vh", "1.5vh");
+    changeContent("0vh", "1.661vh");
 
     isActive_2 = true;
     isActive_1 = false;
@@ -54,7 +54,7 @@ function openTextBlock_3() {
 
     isActive_3 = false;
   } else {
-    changeContent("0vh", "0vh", "1.5vh");
+    changeContent("0vh", "0vh", "1.661vh");
 
     isActive_3 = true;
     isActive_1 = false;

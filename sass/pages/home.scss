@@ -31,24 +31,56 @@ section {
 }
 
 .content-div-1 {
+  padding-left: 64px;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  text-transform: uppercase;
+  align-items: flex-start;
+  justify-content: center;
 
-  button {
-    width: 48%;
-    height: 8vh;
+  .content-button {
+    border: 2px solid #e6e6e6;
+    background-color: transparent;
+    font-size: 1.454vh;
+    width: 54%;
+    text-align: start;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #202020;
+    cursor: pointer;
+    font-family: $font-sans-serif;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-transform: uppercase;
+  }
+
+  i {
+    padding: 20px;
+    border-right: 2px solid #e6e6e6;
+    margin-right: 20px;
+    font-size: 1.95vh;
   }
 
   .card {
     width: 26vw;
-    max-height: 18vh;
+    max-height: 40vh;
     font-size: 0vh;
     margin: 2vh;
-    transition: 0.7s;
-    font-family: $font-sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    transition: 0.3s;
+    font-family: $font-sans-serif-2;
+    font-weight: 400;
+    color: #787878;
+    padding: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.5;
+  }
+
+  .description {
   }
 }
 
