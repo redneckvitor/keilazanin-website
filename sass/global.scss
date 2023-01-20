@@ -1,6 +1,7 @@
 $color-background: #fafafa;
 $color-font: #101010;
 $color-menu-background: #111;
+$color-font-golden: #c29848;
 
 $font-serif: "Playfair Display", serif;
 $font-sans-serif: "Poppins", sans-serif;
@@ -25,11 +26,11 @@ $size-nav-button: 6vh;
 }
 
 .title {
-  @include text-style($font-serif, 6vh, #303030);
+  @include text-style($font-serif, 5.77vh, #303030);
 }
 
 .text-block {
-  @include text-style($font-sans-serif, 2vh, #303030);
+  @include text-style($font-sans-serif, 1.75vh, #303030);
 }
 
 * {
@@ -128,5 +129,10 @@ body {
 @media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) {
   .navbar {
     width: 100%;
+  }
+
+  .header {
+    background-color: white;
+    height: 8vh;
   }
 }
