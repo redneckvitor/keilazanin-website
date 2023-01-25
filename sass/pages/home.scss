@@ -13,8 +13,9 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  /*
   grid-area: label0;
+  */
 }
 
 .image-div-1 {
@@ -26,7 +27,9 @@ section {
 
   background-color: black;
 
+  /*
   grid-area: label1;
+  */
 
   .person-picture-1 {
     width: 100%;
@@ -42,7 +45,9 @@ section {
   align-items: flex-start;
   justify-content: center;
 
+  /*
   grid-area: label0;
+  */
 
   .content-button {
     border: 2px solid #e6e6e6;
@@ -157,6 +162,7 @@ section {
   }
 }
 
+/*
 @media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) {
   section {
     width: 100%;
@@ -281,3 +287,4 @@ section {
     }
   }
 }
+*/
