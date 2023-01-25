@@ -1,7 +1,7 @@
 .title {
   font-family: "Playfair Display", serif;
   font-size: 5.77vh;
-  color: #303030;
+  color: #101010;
   font-weight: regular;
 }
 
@@ -117,6 +117,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  grid-area: label0;
 }
 
 .image-div-1 {
@@ -126,6 +127,7 @@ section {
   justify-content: end;
   align-items: start;
   background-color: black;
+  grid-area: label1;
 }
 .image-div-1 .person-picture-1 {
   width: 100%;
@@ -138,6 +140,7 @@ section {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  grid-area: label0;
 }
 .content-div-1 .content-button {
   border: 2px solid #e6e6e6;
@@ -237,31 +240,35 @@ section {
   section {
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: grid;
     flex-direction: column-reverse;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
-  .text-div-1 {
-    padding: 6%;
+  #section-1 {
+    grid-template-areas: "label1" "label0";
   }
-  .image-div-1 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: end;
-    align-items: start;
-    background-color: black;
+  #section-1 .image-div-1 {
+    margin-top: 18%;
+    background-color: white;
   }
-  .image-div-1 .person-picture-1 {
-    width: auto;
-    height: 47vh;
+  #section-1 .text-div-1 {
+    padding: 5%;
+    grid-area: label0;
   }
   #section-2 {
-    flex-direction: column;
+    height: 140vh;
+    grid-template-areas: "label1" "label0";
   }
   #section-2 .content-div-1 {
-    padding-left: 18px;
+    padding-left: 24px;
+    grid-area: label0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
   }
-  #section-2 .content-button {
+  #section-2 .content-div-1 .content-button {
     border: 2px solid #e6e6e6;
     background-color: transparent;
     font-size: 1.454vh;
@@ -276,19 +283,38 @@ section {
     padding-bottom: 20px;
     text-transform: uppercase;
   }
+  #section-2 .content-div-1 i {
+    padding: 20px;
+    border-right: 2px solid #e6e6e6;
+    margin-right: 20px;
+    font-size: 1.95vh;
+  }
+  #section-2 .content-div-1 .card {
+    width: 86vw;
+    max-height: 40vh;
+    font-size: 0vh;
+    margin: 2vh;
+    margin-left: 0;
+    margin-right: 0;
+    transition: 0.3s;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    color: #787878;
+    padding: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.5;
+  }
   #section-3 {
-    background-image: url("images/bg.png");
-    background-size: 155%;
-    background-position: 0% 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 70vh;
+    background-size: 285%;
+    background-position: 30% 0%;
   }
   #section-3 .content-div-2 {
     width: 84%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    height: 20vh;
+    margin-left: -5%;
+    margin-bottom: -10%;
+    height: 40vh;
   }
   #section-3 .content-div-2 h1 {
     font-family: "Kaushan Script", cursive;
@@ -308,27 +334,6 @@ section {
     font-size: 1.24vh;
     color: white;
     font-weight: 600;
-  }
-  #section-4 .content-div-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  #section-4 .whatsapp-button {
-    width: 85vw;
-    margin: 4vh;
-    height: 6vh;
-    text-align: start;
-    font-size: 2.4vh;
-    background-color: #25d366;
-    color: white;
-    border: unset;
-    font-family: "Poppins", sans-serif;
-  }
-  #section-4 .whatsapp-button i {
-    padding-left: 20px;
-    padding-right: 10px;
   }
 }
 
