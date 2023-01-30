@@ -81,15 +81,19 @@
           class="person-picture-1"
         />
       </div>
-      <!-- Bloco de texto, botões que abrem um cartões com informações
+      <!-- Bloco de texto, botões que abrem um cartões com informações.
         Somente um cartão fica ativo, quando você clica para abrir um
         destes cartões você fecha os outros, e quando você clica nele 
         novamente ele é fechado
       -->
       <div class="content-div-1">
         <h1 class="title">Conheça</h1>
-        <button onclick="openTextBlock_1()" class="content-button">
-          <p><i class="bi bi-plus-lg"></i>A psicóloga</p>
+        <button
+          onclick="openTextBlock_1()"
+          class="content-button"
+          id="button-1"
+        >
+          <p><i class="bi bi-plus-lg" id="icon-1"></i>A psicóloga</p>
         </button>
         <div class="card" id="card-1">
           Quando adolescente, quis ser várias coisas, inclusive engenheira civil
@@ -106,8 +110,12 @@
           aprendizado e me torna mais sensível. Valorizo um atendimento
           humanizado e empático. Agradeço por passar por aqui!
         </div>
-        <button onclick="openTextBlock_2()" class="content-button">
-          <i class="bi bi-plus-lg"></i>
+        <button
+          onclick="openTextBlock_2()"
+          class="content-button"
+          id="button-2"
+        >
+          <i class="bi bi-plus-lg" id="icon-2"></i>
           Terapia Cognitivo Comportamental
         </button>
         <div class="card" id="card-2">
@@ -119,8 +127,12 @@
           emoções e comportamentos, por meio de intervenções nos pensamentos
           baseadas em eventos significativos para o paciente.
         </div>
-        <button onclick="openTextBlock_3()" class="content-button">
-          <i class="bi bi-plus-lg"></i>Como funciona a sessão
+        <button
+          onclick="openTextBlock_3()"
+          class="content-button"
+          id="button-3"
+        >
+          <i class="bi bi-plus-lg" id="icon-3"></i>Como funciona a sessão
         </button>
         <div class="card" id="card-3">
           As sessões possuem duração com cerca de 50 minutos cada. Inicialmente,
