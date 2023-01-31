@@ -208,9 +208,9 @@ section {
 }
 
 #section-3 {
-  background-image: url("images/bg.png");
+  background-image: url("images/background.png");
   background-size: 100%;
-  background-position: 0% 0%;
+  background-position: 0% 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -225,7 +225,7 @@ section {
 #section-3 .content-div-2 h1 {
   font-family: "Kaushan Script", cursive;
   color: #c29848;
-  font-size: 2vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
 }
 #section-3 .content-div-2 .citacao {
@@ -275,8 +275,8 @@ section {
   background-color: rgb(27, 131, 65);
 }
 #section-4 .image-div-1 {
-  width: 100%;
   height: 100%;
+  width: auto;
   display: flex;
   justify-content: end;
   align-items: start;
@@ -368,8 +368,8 @@ section {
   }
   #section-3 {
     height: 40vh;
-    background-size: 285%;
-    background-position: 32% 60%;
+    background-size: 160%;
+    background-position: 50% 80%;
   }
   #section-3 .content-div-2 {
     width: 84%;
@@ -435,6 +435,19 @@ section {
   }
   #section-4 .content-div-3 .whatsapp-button:hover {
     background-color: #62ee95;
+  }
+  #section-4 .image-div-1 {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    background-color: white;
+    grid-area: label1;
+  }
+  #section-4 .image-div-1 .person-picture-1 {
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) and (min-aspect-ratio: 40/72) and (orientation: portrait) {
@@ -517,8 +530,158 @@ section {
   }
   #section-3 {
     height: 40vh;
-    background-size: 285%;
-    background-position: 32% 0%;
+    background-size: 132%;
+    background-position: 100% 120%;
+  }
+  #section-3 .content-div-2 {
+    width: 84%;
+    margin-left: -5%;
+    margin-bottom: -1%;
+    height: 20vh;
+  }
+  #section-3 .content-div-2 h1 {
+    font-family: "Kaushan Script", cursive;
+    color: #c29848;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+  }
+  #section-3 .content-div-2 .citacao {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  #section-3 .content-div-2 h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.24vh;
+    color: white;
+    font-weight: 600;
+  }
+  #section-4 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "label1" "label0";
+  }
+  #section-4 .content-div-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: label0;
+    gap: 4vh;
+    padding: 0%;
+  }
+  #section-4 .content-div-3 .title {
+    font-family: "Playfair Display", serif;
+    font-size: 3.77vh;
+    color: #101010;
+    font-weight: regular;
+  }
+  #section-4 .content-div-3 .whatsapp-button {
+    width: 65vw;
+    margin: 0vh;
+    height: 6vh;
+    text-align: start;
+    font-size: 2.4vh;
+    background-color: #25d366;
+    color: white;
+    border: unset;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+  }
+  #section-4 .content-div-3 .whatsapp-button i {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  #section-4 .content-div-3 .whatsapp-button:hover {
+    background-color: #62ee95;
+  }
+}
+@media only screen and (max-aspect-ratio: 1/1) and (orientation: portrait) and (min-aspect-ratio: 22/40) and (orientation: portrait) {
+  section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "label0" "label1";
+  }
+  #section-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "label1" "label0";
+  }
+  #section-1 .image-div-1 {
+    margin-top: 12%;
+    background-color: transparent;
+  }
+  #section-1 .text-div-1 {
+    padding: 4%;
+    grid-area: label0;
+  }
+  #section-2 {
+    margin-top: 22%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "label1" "label0";
+  }
+  #section-2 .image-div-1 {
+    width: 98%;
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    grid-area: label1;
+    background-color: black;
+    display: none;
+  }
+  #section-2 .image-div-1 .person-picture-1 {
+    width: 100%;
+    height: auto;
+  }
+  #section-2 .content-div-1 {
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    grid-area: label0;
+    gap: 2vh;
+  }
+  #section-2 .content-div-1 .content-button {
+    width: 92%;
+    padding-top: 5.5%;
+    padding-bottom: 5.5%;
+    font-size: 1.8vh;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #202020;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+  }
+  #section-2 .content-div-1 i {
+    padding: 7%;
+    border-right: 2px solid #e6e6e6;
+    margin-right: 4%;
+    font-size: 1.95vh;
+  }
+  #section-2 .content-div-1 .card {
+    width: 86vw;
+    max-height: 90vh;
+    font-size: 0vh;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  #section-3 {
+    height: 40vh;
+    background-size: 132%;
+    background-position: 100% 120%;
   }
   #section-3 .content-div-2 {
     width: 84%;
