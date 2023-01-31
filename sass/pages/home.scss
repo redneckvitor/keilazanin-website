@@ -96,7 +96,6 @@ section {
 
     i {
       padding: 20px;
-      border-right: 2px solid #e6e6e6;
       margin-right: 20px;
       font-size: 1.95vh;
 
@@ -309,7 +308,6 @@ section {
 
       i {
         padding: 7%; //20px
-        border-right: 2px solid #e6e6e6;
         margin-right: 4%; //20px
 
         font-size: 1.95vh;
@@ -518,7 +516,6 @@ section {
 
         i {
           padding: 7%; //20px
-          border-right: 2px solid #e6e6e6;
           margin-right: 4%; //20px
 
           font-size: 1.95vh;
@@ -624,6 +621,7 @@ section {
     }
   }
 
+  // Media query para celulares ainda mais simples e antigos
   @media only screen and (min-aspect-ratio: 22/40) and (orientation: portrait) {
     section {
       width: 100%;
@@ -711,7 +709,6 @@ section {
 
         i {
           padding: 7%; //20px
-          border-right: 2px solid #e6e6e6;
           margin-right: 4%; //20px
 
           font-size: 1.95vh;

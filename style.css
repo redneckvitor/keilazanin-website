@@ -186,7 +186,6 @@ section {
 }
 #section-2 .content-div-1 i {
   padding: 20px;
-  border-right: 2px solid #e6e6e6;
   margin-right: 20px;
   font-size: 1.95vh;
   transition: 0.4s;
@@ -355,7 +354,6 @@ section {
   }
   #section-2 .content-div-1 i {
     padding: 7%;
-    border-right: 2px solid #e6e6e6;
     margin-right: 4%;
     font-size: 1.95vh;
   }
@@ -518,7 +516,6 @@ section {
   }
   #section-2 .content-div-1 i {
     padding: 7%;
-    border-right: 2px solid #e6e6e6;
     margin-right: 4%;
     font-size: 1.95vh;
   }
@@ -669,7 +666,6 @@ section {
   }
   #section-2 .content-div-1 i {
     padding: 7%;
-    border-right: 2px solid #e6e6e6;
     margin-right: 4%;
     font-size: 1.95vh;
   }

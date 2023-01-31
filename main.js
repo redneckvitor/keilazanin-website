@@ -33,10 +33,6 @@ function changeBorder(
   document.getElementById("button-1").style.border = x;
   document.getElementById("button-2").style.border = y;
   document.getElementById("button-3").style.border = z;
-
-  document.getElementById("icon-1").style.borderRight = x;
-  document.getElementById("icon-2").style.borderRight = y;
-  document.getElementById("icon-3").style.borderRight = z;
 }
 //
 
