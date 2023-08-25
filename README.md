@@ -1,5 +1,5 @@
 <h1 align="center">
-  Website profissional da psicóloga Keila Zanin
+  Website profissional para a psicóloga Keila Zanin
 </h1>
 
 <p align="center">
