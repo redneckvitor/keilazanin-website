@@ -8,6 +8,22 @@
   do SASS em projetos e a criar elementos interativos com Javascript.
 </p>
 
+
+
+
+<div align="center"> 
+
+
+  
+  ## 📡 Tecnologias utilizadas
+
+  <img alt="HTML5" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+  <img alt="CSS3" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+  <img alt="Javascript" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+  <img alt="SASS" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg">
+  
+</div>
+
 <h2 align="center">
   <a href="https://redneckvitor.github.io/keilazanin-website/">
     redneckvitor.github.io/keilazanin-website
